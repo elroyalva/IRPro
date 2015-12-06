@@ -1,16 +1,6 @@
-$('#tags').tagsInput({
-   'height':'100px',
-   'width':'300px',
-   // 'interactive':true,
-   'defaultText':'add a tag',
-   // 'onAddTag':callback_function,
-   // 'onRemoveTag':callback_function,
-   // 'onChange' : callback_function,
-   'delimiter': [',',';'],   // Or a string with a single delimiter. Ex: ';'
-   'removeWithBackspace' : true,
-   // 'minChars' : 0,
-   // 'maxChars' : 0, // if not provided there is no limit
-   'placeholderColor' : '#666666'
+$(document).ready(function() {
+  $("#fromDate").datepicker();
+  $("#toDate").datepicker();
 });
 
 function yesnoCheck() {

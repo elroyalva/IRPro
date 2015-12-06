@@ -2,11 +2,15 @@
 <head>
 	<title>Wildcards Search</title>
 	<script type="text/javascript" src="../lib/jquery/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../lib/tagsinput/js/bootstrap-tagsinput.min.js"></script>
+	<script type="text/javascript" src="../lib/datepicker/js/bootstrap-datepicker.js"></script>
 	<script type="text/javascript" src="../js/search.js"></script>
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../lib/jquery/css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="../lib/tagsinput/css/bootstrap-tagsinput.css">
+	<link rel="stylesheet" type="text/css" href="../lib/datepicker/css/bootstrap-datepicker3.css">
 	<link rel="stylesheet" type="text/css" href="../css/search.css">
     <link rel="shortcut icon" href="../images/favicon.ico">
 </head>
@@ -51,7 +55,13 @@
 							<input type="text" name="longitude" id="longitude" placeholder = "Latitude as xx.xx" required pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
 						</div>
 					</div>
-					<div class="col-md-4 addItem">.col-md-4</div>
+					<div class="col-md-4 addItem">
+						<label class="advancedLabel">
+							<input type="checkbox" name="useTag" value="tags"/>  Search by Date
+						</label>
+						<p class="advancedLabel">From :<input type="text" id="fromDate"></p>
+						<p style="margin-left: 19px;" class="advancedLabel">To   :<input type="text" id="toDate"></p>
+					</div>
 				</div>
 				<div class="row" id="moe">
 					<div class="col-md-4 addItem">
