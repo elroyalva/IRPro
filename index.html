@@ -3,20 +3,14 @@
 	<title>Wildcards Search</title>
 	<script type="text/javascript" src="../lib/jquery/js/jquery.min.js"></script>
 	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../lib/tagsinput/js/bootstrap-tagsinput.min.js"></script>
 	<script type="text/javascript" src="../js/search.js"></script>
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../lib/tagsinput/css/bootstrap-tagsinput.css">
 	<link rel="stylesheet" type="text/css" href="../css/search.css">
     <link rel="shortcut icon" href="../images/favicon.ico">
 </head>
 <body background="../images/background.png">
-	<!-- <a href="#results" class="btn btn-default">Default</a>
-	<a href="#" class="btn btn-primary">Primary</a>
-	<a href="#" class="btn btn-success">Success</a>
-	<a href="#" class="btn btn-info">Info</a>
-	<a href="#" class="btn btn-warning">Warning</a>
-	<a href="#" class="btn btn-danger">Danger</a>
-	<a href="#" class="btn btn-link">Link</a> -->
-
 <div class="container">
   	<div class="row">
   	<div class="col-md-3"></div>
@@ -37,7 +31,10 @@
 			<div id="collapseOne" class="collapse advancedInput">
 				<!-- <textarea class="form-control" rows="4"></textarea> -->
 				<div class="row" id="moe">
-					<div class="col-md-4 addItem">.col-md-4</div>
+					<div class="col-md-4 addItem">
+						<!-- <input name="tags" id="tags" value="foo,bar,baz" /> -->
+						<input type="text" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" />
+					</div>
 					<div class="col-md-4 addItem">.col-md-4</div>
 					<div class="col-md-4 addItem">.col-md-4</div>
 				</div>
