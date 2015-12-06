@@ -37,7 +37,15 @@
 						</label>
 						<input type="text" value="Syria" data-role="tagsinput" />
 					</div>
-					<div class="col-md-4 addItem">.col-md-4</div>
+					<div class="col-md-4 addItem">
+						<label class="advancedLabel">
+							<input type="checkbox" name="useTag" value="location"/>  Search by location
+						</label>
+						<br/>
+						<input type="text" name="country" id="country" placeholder="Enter Name of a country" /> 
+						<input type="text" name="latitude" id="latitude" placeholder = "Latitude as xx.xx" required pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
+						<input type="text" name="longitude" id="longitude" placeholder = "Latitude as xx.xx" required pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
+					</div>
 					<div class="col-md-4 addItem">.col-md-4</div>
 				</div>
 				<div class="row" id="moe">
