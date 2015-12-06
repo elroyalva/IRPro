@@ -7,11 +7,11 @@
 
 body{
 background: #999; /* for non-css3 browsers */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); /* for IE */
-background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); /* for webkit browsers */
-background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#000)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #fff,  #000); /* for firefox 3.6+ */
 background-repeat: no-repeat;
-height: 100%;
+min-height: 1200px;
 }
 
 .form-group {
@@ -46,7 +46,8 @@ height: 100%;
 
 .addItem {
 	border: 1px solid white;
-	height: 150px;
+	height: auto;
+	min-height: 200px;
 }
 
 #moe {
@@ -83,4 +84,8 @@ height: 100%;
 
 .boxWithMargin5{
 	margin: 5px;
+}
+
+.LabelCheck{
+	color: green;
 }
