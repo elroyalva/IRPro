@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/search.css">
     <link rel="shortcut icon" href="../images/favicon.ico">
 </head>
-<body background="../images/background.png">
+<body>
 <div class="container">
   	<div class="row">
   	<div class="col-md-3"></div>
@@ -19,9 +19,9 @@
   	</div>
   	<div class="row">
   	<div class="col-md-3"></div>
-  	<div class="col-md-5"><p>A multi-faceted search engine for Twitter, Tumblr and Flickr data.</p>
+  	<div class="col-md-7"><p style="margin-left:8%">A multi-faceted search engine for Twitter, Tumblr and Flickr data.</p>
   	</div>
-  	<div class="col-md-4"></div>
+  	<div class="col-md-2"></div>
   	</div>
   	<!-- <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
   	<div class="form-group searchStuff">
@@ -78,7 +78,11 @@
 							<input type="checkbox" name="useTag" value="images"/> Search only Results with Images
 						</label>
 					</div>
-					<div class="col-md-4 addItem">.col-md-4</div>
+					<div class="col-md-4 addItem">
+						<label class="advancedLabel">
+							<input type="checkbox" name="useTag" value="relevance"/> Search by Popularity (Views)
+						</label>
+					</div>
 				</div>
 				<div class="row" id="moe">
 					<div class="col-md-6 addItem">

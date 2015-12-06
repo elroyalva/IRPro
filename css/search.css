@@ -5,6 +5,15 @@
 	background: white;
 }
 
+body{
+background: #999; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */
+background-repeat: no-repeat;
+height: 100%;
+}
+
 .form-group {
 	padding-top: 60px;
 	/*width: 80%;*/
