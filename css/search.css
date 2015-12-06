@@ -48,4 +48,10 @@
 .bootstrap-tagsinput{
 	/*height: 70px;*/
 	line-height: 200%;
+	margin: 20px;
+	/*width: 80%;*/
+}
+
+.advancedLabel {
+	margin-top: 10px;
 }
