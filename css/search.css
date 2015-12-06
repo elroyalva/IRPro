@@ -88,4 +88,9 @@ min-height: 1200px;
 
 .LabelCheck{
 	color: green;
+	font-size: 20px;
+}
+
+#logo_holder{
+	margin: 40px;
 }
