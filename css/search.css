@@ -63,3 +63,15 @@
 #country, #latitude, #longitude{
    margin-bottom: 5px;
 }
+
+#isCountry{
+	display:block;
+}
+
+#isCoord{
+	display: none;
+}
+
+.boxWithMargin5{
+	margin: 5px;
+}

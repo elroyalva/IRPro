@@ -42,14 +42,37 @@
 							<input type="checkbox" name="useTag" value="location"/>  Search by location
 						</label>
 						<br/>
-						<input type="text" name="country" id="country" placeholder="Enter Name of a country" /> 
-						<input type="text" name="latitude" id="latitude" placeholder = "Latitude as xx.xx" required pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
-						<input type="text" name="longitude" id="longitude" placeholder = "Latitude as xx.xx" required pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
+						Country Name <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="countryCheck" checked="checked">  Co-ordinates <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="coordCheck"><br>
+						<div id="isCountry">
+							<input type="text" name="country" id="country" placeholder="Enter Name of a country" /> 
+						</div>
+						<div id="isCoord">
+							<input type="text" name="latitude" id="latitude" placeholder = "Latitude as xx.xx" required pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
+							<input type="text" name="longitude" id="longitude" placeholder = "Latitude as xx.xx" required pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
+						</div>
 					</div>
 					<div class="col-md-4 addItem">.col-md-4</div>
 				</div>
 				<div class="row" id="moe">
-					<div class="col-md-4 addItem">.col-md-4</div>
+					<div class="col-md-4 addItem">
+						<label class="advancedLabel">
+							<input type="checkbox" name="useTag" value="location"/>  Search in Language
+						</label>
+						<br/>
+						<label class="boxWithMargin5">
+							<input type="checkbox" name="useLang" value="en"/>  English
+						</label>
+						<label class="boxWithMargin5">
+							<input type="checkbox" name="useLang" value="fr"/>  French
+						</label>
+						
+						<label class="boxWithMargin5">
+							<input type="checkbox" name="useLang" value="es"/>  Spanish
+						</label>
+						<label class="boxWithMargin5">
+							<input type="checkbox" name="useLang" value="ar"/>  Arabic
+						</label>
+					</div>
 					<div class="col-md-4 addItem">.col-md-4</div>
 					<div class="col-md-4 addItem">.col-md-4</div>
 				</div>
