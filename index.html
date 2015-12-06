@@ -56,7 +56,7 @@
 				<div class="row" id="moe">
 					<div class="col-md-4 addItem">
 						<label class="advancedLabel">
-							<input type="checkbox" name="useTag" value="location"/>  Search in Language
+							<input type="checkbox" name="useTag" value="language"/>  Search in Language
 						</label>
 						<br/>
 						<label class="boxWithMargin5">
@@ -73,13 +73,32 @@
 							<input type="checkbox" name="useLang" value="ar"/>  Arabic
 						</label>
 					</div>
-					<div class="col-md-4 addItem">.col-md-4</div>
+					<div class="col-md-4 addItem">
+						<label class="advancedLabel">
+							<input type="checkbox" name="useTag" value="images"/> Search only Results with Images
+						</label>
+					</div>
 					<div class="col-md-4 addItem">.col-md-4</div>
 				</div>
 				<div class="row" id="moe">
-					<div class="col-md-4 addItem">.col-md-4</div>
-					<div class="col-md-4 addItem">.col-md-4</div>
-					<div class="col-md-4 addItem">.col-md-4</div>
+					<div class="col-md-6 addItem">
+					<label class="advancedLabel">
+							<input type="checkbox" name="useTag" value="dataSrc"/>  Search by Data Source
+						</label>
+						<br/>
+						<label class="boxWithMargin5">
+							<input type="checkbox" name="fromdatasrc" value="twitter"/>  Twitter
+						</label>
+						<label class="boxWithMargin5">
+							<input type="checkbox" name="fromdatasrc" value="tumblr"/>  Tumblr
+						</label>
+						
+						<label class="boxWithMargin5">
+							<input type="checkbox" name="fromdatasrc" value="flickr"/>  Flickr
+						</label>
+						</div>
+					<div class="col-md-6 addItem">.col-md-4</div>
+					
 				</div>
 			</div>
 		</div>
