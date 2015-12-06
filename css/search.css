@@ -7,7 +7,7 @@
 
 .form-group {
 	padding-top: 60px;
-	width: 80%;
+	/*width: 80%;*/
 }
 
 .searchButton {
@@ -43,4 +43,9 @@
 #moe {
 	margin-right: 0px;
 	margin-left: 0px; 
+}
+
+.bootstrap-tagsinput{
+	/*height: 70px;*/
+	line-height: 200%;
 }
