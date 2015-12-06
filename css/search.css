@@ -1,0 +1,41 @@
+.jumbotron{
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 30px;
+	background: white;
+}
+
+.form-group {
+	padding-top: 60px;
+	width: 80%;
+}
+
+.searchButton {
+	/*float: right;*/
+	margin-top: 30px;
+}
+
+.searchStuff {
+	text-align: center;
+}
+
+.advancedSearch {
+	width: 100% !important;
+}
+.dropdown-toggle {
+	padding: 16.5px;
+}
+.caret{
+	border-bottom: 4px dashed;
+	border-top: none;
+}
+
+.advancedInput {
+	background-color: rgb(220,219,217);
+	margin-top: 20px;
+}
+
+.addItem {
+	border: 1px solid white;
+	height: 150px;
+}
