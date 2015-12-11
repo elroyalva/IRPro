@@ -13,3 +13,9 @@ function yesnoCheck() {
       document.getElementById('isCoord').style.display = 'block';
    }
 }
+
+function doAdvancedSearch(){
+	alert(document.getElementById('advanced').value);
+	document.getElementById('advanced').value = true;
+	this.form.elements["advanced"].value = true;
+}

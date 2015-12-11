@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="../lib/datepicker/css/bootstrap-datepicker3.css">
 	<link rel="stylesheet" type="text/css" href="../css/search.css">
     <link rel="shortcut icon" href="../images/favicon.ico">
+	<meta http-equiv="Content-Type" Content="text/html;charset=utf-8"/>
 </head>
 <body>
 <div class="container">
@@ -29,8 +30,10 @@
   	</div>
   	<!-- <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
   	<div class="form-group searchStuff">
+	<form method="POST" action="http://192.168.0.6:8080/SolrSearch/solr/search" enctype="application/json">
 	  <!-- <label class="control-label" for="focusedInput">Focused input</label> -->
-		<input class="form-control" id="focusedInput" placeholder="Search for something..." type="text">
+	    <input type="hidden" name="advanced" id="advanced" value=false>
+		<input class="form-control" id="focusedInput" placeholder="Search for something..." type="text" name="query_sent">
 	 	<div>
 			<div id="collapseOne" class="collapse advancedInput">
 				<!-- <textarea class="form-control" rows="4"></textarea> -->
@@ -45,14 +48,14 @@
 						<label class="advancedLabel">
 							<input type="checkbox" name="useTag" value="location"/> <p class="LabelCheck"> Search by location </p>
 						</label>
-						<br/>
+						<br/>	
 						Country Name <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="countryCheck" checked="checked" style="margin-right: 15px">  Co-ordinates <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="coordCheck"><br>
 						<div id="isCountry" style="margin-top:15px">
 							<input type="text" name="country" id="country" placeholder="Enter Name of a country" /> 
 						</div>
 						<div id="isCoord" style="margin-top:15px">
-							<input type="text" name="latitude" id="latitude" placeholder = "Latitude as xx.xx" required pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
-							<input type="text" name="longitude" id="longitude" placeholder = "Latitude as xx.xx" required pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
+							<input type="text" name="latitude" id="latitude" placeholder = "Latitude as xx.xx"  pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
+							<input type="text" name="longitude" id="longitude" placeholder = "Latitude as xx.xx"  pattern="[-+]?[0-9]*[.,]?[0-9]+"/> 
 						</div>
 					</div>
 					<div class="col-md-4 addItem">
@@ -122,9 +125,9 @@
 				</div>
 			</div>
 		</div>
-	 	<a href="#" class="btn btn-primary searchButton">Search</a>
+	 	<input type="submit" name="submit" value="Search" class="btn btn-primary searchButton">
 	 	<div class="btn-group searchButton">
-			<a href="#" class="btn btn-info">Advanced Search</a>
+			<a href="#" class="btn btn-info" onclick="javascript:doAdvancedSearch();">Advanced Search</a>
 		 	<a for="collapseOne" href="#collapseOne" class="btn btn-info dropdown-toggle" data-toggle="collapse"><span class="caret"></span></a>
 		 	<!-- <ul class="dropdown-menu advancedSearch">
 				<li><a href="#">Action</a></li>
@@ -137,7 +140,7 @@
 		<div class="searchButton">
 			<a href="#" class="btn btn-success ">Stats for nerds</a>
 		</div>
-
+	</form>
 	</div>
 </div>
 </body>
